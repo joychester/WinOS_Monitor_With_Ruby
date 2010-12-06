@@ -2,7 +2,7 @@ Code developed and tested under Ruby1.8.7;
 If you need to Draw a performance monitoring diagram with Gruff, ruby1.8.6 is recommened.
 
 Usage example:
-> Perf_mon_runner.rb [MonitredIPs] [Duration] [Interval] [FilePath]
+> Perf_mon_runner.rb [MonitredIPs] [Duration(min)] [Interval(sec)] [FilePath]
 such as:
 > Perf_mon_runner.rb \"ip1,ip2,ip3\" 1 20 \"D:\\\\temp\\\\\"
 
