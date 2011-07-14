@@ -1,6 +1,4 @@
-# To change this template, choose Tools | Templates
-# and open the template in the editor.
-
+# Sample usage : > Perf_mon_runner.rb "10.201.70.248" 1 10 "D:\\temp\\"
 require 'perf_mon_util'
 
 case ARGV.length
@@ -23,6 +21,7 @@ when 1
     puts "  \\physicaldisk(_total)\\% disk read time"
     puts "  \\physicaldisk(_total)\\% disk write time"
     puts "  \\network interface(*#1)\\bytes total/sec"
+    puts "  \\TCP\\Connections Established"
     Process.exit!(1);
   end
 
