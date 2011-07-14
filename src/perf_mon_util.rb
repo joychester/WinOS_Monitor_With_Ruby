@@ -1,7 +1,3 @@
-# To change this template, choose Tools | Templates
-# and open the template in the editor.
-
-
 class PerfMonUtil
   @hostIPs = [];
 
@@ -35,13 +31,12 @@ class PerfMonUtil
               "\\physicaldisk(_total)\\% disk read time", #DISK I/O
               "\\physicaldisk(_total)\\% disk write time",
               "\\network interface(*#1)\\bytes total/sec", #NetWork I/O
+              "\\TCP\\Connections Established", #TCP Connections counts for ESTABLISHED or CLOSE-WAIT state
               "-s", "#{machineIP}","-si","#{intv}", "-sc", "#{sampler_count}", "-o", filename)
 
               Process.exit!(1);
        }
     }
-    
+
   end
 end
-
-
